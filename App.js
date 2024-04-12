@@ -1,6 +1,7 @@
 // import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View,Image,ImageBackground, ScrollView, Button, Pressable, Modal,StatusBar, ActivityIndicator, Alert} from 'react-native';
+import Greet from './src/components/greet';
 const logoImg=require("./assets/adaptive-icon.png");
 export default function App() {
   const [modalopen, setmodalopen] = useState(false);
@@ -30,6 +31,9 @@ export default function App() {
       color='midnightblue'
       />
       </Pressable>
+      <View>
+        <Greet name="components"/>
+      </View>
       <Pressable onPressIn={()=>console.log("in")} onPressOut={()=>console.log("out")}>
       <View style={styles.secondview}>
         <Text style={styles.text}>Second View</Text>
