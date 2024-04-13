@@ -7,9 +7,9 @@ export default function Stylesmodule () {
     <View style={styles.flexbox}>
         <Box children="green box" style={{backgroundColor:"green",alignSelf:"flex-start"}}/>
         <Box children="red box" style={{backgroundColor:"red",alignSelf:"flex-end"}}/>
-        <Box children="yellow box" style={{backgroundColor:"yellow",alignSelf:"center"}}/>
-        <Box children="orange box" style={{backgroundColor:"orange"}}/>
-        <Box children="blue box" style={{backgroundColor:"blue"}}/>
+        <Box children="yellow box" style={{backgroundColor:"yellow",alignSelf:"center",position:"absolute",top:100,left:100}}/>
+        <Box children="orange box" style={{backgroundColor:"orange",flexshrink:1}}/>
+        <Box children="blue box" style={{backgroundColor:"blue",flexshrink:1}}/>
        {/* <View style={styles.dark}>
          <Text style={styles.darkText}>Styles Inheritance</Text>
       </View>
@@ -29,9 +29,13 @@ const styles = StyleSheet.create({
    borderWidth:6,
    flex:1,
    marginTop:15,
+   //width:150,
+  //  flexWrap:"wrap",
+  //  height:300,
+   gap:10,
    //flexDirection:"row",
    //justifyContent:"flex-end",
-   alignItems:"stretch"
+   //alignItems:"stretch"
   },
     boxmodel:{
         width:250,
