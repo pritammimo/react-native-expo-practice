@@ -1,16 +1,13 @@
-import { Slot, Stack } from 'expo-router';
-// import { Tabs } from 'expo-router/tabs';
-import { FontAwesome,MaterialIcons,Ionicons,Feather} from '@expo/vector-icons';
-// import { Ionicons } from '@expo/vector-icons';
-// export default function HomeLayout() {
-//   return <Slot />;
-// }
+
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { Drawer } from 'expo-router/drawer';
 export default function BasicLayout() {
     return (
-    <Stack>
-         <Stack.Screen name="index" options={{ title: 'Core Component'}} />
-      {/* <Stack.Screen name="Corecomponent" options={{ title: 'core' }}/> */}
-      <Stack.Screen name="Styles" options={{ title: 'styles' }}/>
-    </Stack>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+        <Drawer >
+          <Drawer.Screen name="index" options={{ title: 'Core Component' }} />
+          <Drawer.Screen name="Styles" options={{ title: 'Styles' }} />
+        </Drawer>
+      </GestureHandlerRootView>
   );
 }
