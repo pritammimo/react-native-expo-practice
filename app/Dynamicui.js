@@ -16,8 +16,7 @@ console.log(Platform.OS)
         </View>
         
         
-    {/* <View style={styles.container}> 
-    <StatusBar style='auto'/>
+    <View style={styles.container}> 
     <View style={[styles.box,{
         width:Windowwidth>500?"50%":"30%",
         height:height>600?"40%":"30%",
@@ -26,7 +25,7 @@ console.log(Platform.OS)
     <Text style={{fontSize:Windowwidth>500?50:30}}>DynamicuI</Text>
     </View>
 
-    </View> */}
+    </View>
     </SafeAreaView>
   )
 }

@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
-import Box from '../components/box';
+import Box from '../src/components/box';
 
 export default function Stylesmodule () {
   return (

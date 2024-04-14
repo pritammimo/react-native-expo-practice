@@ -7,8 +7,8 @@ import {
     StatusBar,
     SectionList,
   } from "react-native";
-  import pokemonList from "../../data.json";
-  import groupedPokemonList from "../../group.json";
+  import pokemonList from "../data.json";
+  import groupedPokemonList from "../group.json";
   
   export default function App() {
     return (

@@ -1,8 +1,8 @@
 // import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View,Image,ImageBackground, ScrollView, Button, Pressable, Modal,StatusBar, ActivityIndicator, Alert} from 'react-native';
-import Greet from '../components/greet'
-const logoImg=require("../../assets/adaptive-icon.png");
+import Greet from '../src/components/greet'
+const logoImg=require("../assets/adaptive-icon.png");
 export default function Corecomponent() {
   const [modalopen, setmodalopen] = useState(false);
   return (
