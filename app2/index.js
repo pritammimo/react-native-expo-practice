@@ -1,12 +1,11 @@
-import { Button, StyleSheet, Text, View } from "react-native";
-import { router } from 'expo-router';
+import { StyleSheet, Text, View } from "react-native";
+
 export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
         <Text style={styles.title}>Expo router introduction</Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
-        <Button title="go to docs page" onPress={()=>router.navigate("/Basic")}/>
       </View>
     </View>
   );
